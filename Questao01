@@ -1,1 +1,39 @@
+public class AnimalDeEstimacao {
+    public String nome;
+    public String tipo;
+    public int idade;
+    public String raca;
+
+    // Construtor
+    public AnimalDeEstimacao(String nome, String tipo, int idade, String raca) {
+        this.nome = nome;
+        this.tipo = tipo;
+        this.idade = idade;
+        this.raca = raca;
+    }
+
+    public void emitirSom() {
+        System.out.println("Au Au!");
+    }
+
+    public String apresentar() {
+        return "Nome: " + nome + "\nTipo: " + tipo + "\nIdade: " + idade + " anos\nRaça: " + raca;
+    }
+
+}
+///////////////////
+public class TesteAnimalDeEstimacao {
+    public static void main(String[] args) {
+        // Criando um objeto da classe AnimalDeEstimacao
+        AnimalDeEstimacao animal1 = new AnimalDeEstimacao("Rex", "Cachorro", 5, "Labrador");
+
+
+        System.out.println(animal1.apresentar());
+
+
+        // Chamando o método emitirSom
+        animal1.emitirSom();
+
+    }
+}
 
